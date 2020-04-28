@@ -55,13 +55,17 @@ li {
     
 }
 
-div#showcasewrapper {
+div#showcasewrapper1 {
     display: flex;
 }
 
-img#showcase {
+img#showcase1 {
     width: 100%;
     padding-bottom: 30px;
+}
+
+div#showcasewrapper2 {
+    display: none;
 }
 
 div#newswrapper {
@@ -93,6 +97,19 @@ img.prodotti {
 }
 
 @media (max-width: 800px) {
+    
+    div#showcasewrapper1 {
+        display: none;
+    }
+    
+    div#showcasewrapper2 {
+    display: flex;
+    }
+    
+    img#showcase2 {
+        width: 100%;
+        padding-bottom: 30px;
+    }
     
     div.news {
     flex: 50%;
