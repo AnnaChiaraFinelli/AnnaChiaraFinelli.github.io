@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<title>Eventi - Pixel Knight</title>
+		<link rel="icon" href="img/favicon_pixelknight.png" alt="favicon pixelknight">
+		<link rel="stylesheet" type="text/css" href="main.css">
+			  
+	</head>
+	
+	<body>
+	
+		<div class="wrapper">
+			
+			<header>
+				
+				<div id="logo"><a href="home.html" alt="home"><img src="img/pixelknight_marchio.png" alt="marchio pixelknight" id="pk"></a></div>
+				
+				<div id="menu">
+					
+					<ul>
+						
+						<li><a href="home.html" alt="home" class="nav_click">HOME</a></li>
+						<li><a href="storia.html" alt="storia" class="nav_click">LA STORIA</a></li>
+						<li><a href="eventi.html" alt="eventi" class="nav_sel">EVENTI</a></li>
+						<li><a href="negozio.html" alt="negozio" class="nav_click">NEGOZIO</a></li>
+						<li><a href="contatti.html" alt="contatti" class="nav_click">CONTATTI</a></li>
+					
+					</ul>
+				
+				</div>
+				
+				<div id="carrello">
+					
+					<a href="carrello.html" alt="carrello"><img src="img/icon_cart.png" alt="icona carrello" id="icona_carrello"></a>
+				
+				</div>
+				
+				<div id="hamburgermenu_icon" class="responsive_stuff">
+					
+					<span onclick="openHamburgerPage();"><img src="img/icon_hamburgermenu.png" alt="hamburger menu" id="hamburgermenu_img"></span>
+				
+				</div>
+				
+				<div id="hamburger_page">
+					
+					<div id="closehmbgmenu_icon">
+						
+						<a onclick="closeHamburgerPage();"><img src="img/icon_close_hamburgermenu.png" alt="close hamburger menu"></a>
+					
+					</div>
+					
+					<div id="hmbgmenu_nav">
+						
+						<ul id="hmbg_list">
+							
+							<li class="hmbg_el"><a href="home.html" alt="home" class="nav_click">HOME</a></li>
+							<li class="hmbg_el"><a href="storia.html" alt="storia" class="nav_click">LA STORIA</a></li>
+							<li class="hmbg_el"><a href="eventi.html" alt="eventi" class="nav_sel">EVENTI</a></li>
+							<li class="hmbg_el"><a href="negozio.html" alt="negozio" class="nav_click">NEGOZIO</a></li>
+							<li class="hmbg_el"><a href="contatti.html" alt="contatti" class="nav_click">CONTATTI</a></li>
+							<li class="hmbg_el"><a href="carrello.html" alt="carrello" class="nav_click">CARRELLO</a></li>
+						
+						</ul>
+					
+					</div>
+				
+				</div>
+			
+			</header>
+			
+			<div class="page">
+			
+				<div class="contenuti">
+					
+					<div class="testi" id="top_page">
+						
+						<div class="responsive_stuff">
+							
+							<img src="img/responsive_eventi1.png" alt="biglietto mostra KNIGHT" class="responsive_img">
+						
+						</div>
+						
+						<h1 id="knight">KNIGHT</h1>
+						
+						<p class="bigger">19 - 21 Giugno 2020</p>
+						<p class="bigger">Presso Mostra d'Oltremare</p>
+						<p class="bigger">Via J.F. Kennedy, 54</p>
+						<p class="bigger">80125 Napoli (NA)</p>
+						
+						<br>
+						
+						<p>Pixelknight organizza anche degli eventi dal vivo. Il prossimo di questi è intitolato KNIGHT: gli amanti dell'Arcade possono riunirsi per passare delle serate all'insegna del pixel presso la Mostra d'Oltremare di Napoli, scoprendo nuove curiosità a proposito delle colonne portanti dell'industria del videogioco e sfidandosi a registrare il record della serata su uno dei cabinati messi a disposizione.</p>
+						
+						<p>La mostra è aperta a partecipanti di tutte le età. Per partecipare alle gare e agli eventi ufficiali, rivolgersi agli organizzatori o all'info point.</p>
+						
+						<br><br>
+						
+						<div class="responsive_stuff">
+							
+							<img src="img/responsive_eventi2.png" alt="poster knight" class="responsive_img">
+						
+						</div>
+						
+						<h1 id="info">INFO</h1>
+						
+						<div id="info_container">
+							
+							<div class="info_grid">
+								
+								<p class="bigger">Orari</p>
+
+								<p>Mostra<br>17:30 - 20:30</p>
+								
+								<p>Gare<br>18:00 - 20:00</p>
+								
+								<p>Premiazioni<br>20:00 - 20:30</p>
+							
+							</div>
+							
+							<div class="info_grid">
+								
+								<p class="bigger">Biglietti</p>
+								
+								<p>12€ Ridotto Gruppi di min. 12 persone, maggiori di 65 anni e quanti previsti da Gratuiti e Ridotti</p>
+								
+								<p>10€ Ridotto Under 21</p>
+								
+								</div>
+													
+							<div>
+								
+								<p class="bigger">Prenotazioni</p>
+								
+								<p>Tel. +39 000 000000<br><br>Dall'11 al 20 Giugno<br>Ore 9:00 - 17:00<br><br>Sabato 13 Giugno,<br>20 giugno<br>Ore 9:00 - 13:00<br><br>Domenica 14 Giugno<br>Chiuso</p>
+																
+							</div>
+						
+						</div>
+						
+						<br><br><br>
+						
+						<h1 id="gallery">GALLERY</h1>
+						
+						<div id="gallery_container">
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(1);"><img src="img/eventi_gallery1.png" alt="Evento KNIGHT 1" class="knight_gallery"></div>
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(2);"><img src="img/eventi_gallery2.png" alt="Evento KNIGHT 2" class="knight_gallery"></div>
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(3);"><img src="img/eventi_gallery3.png" alt="Evento KNIGHT 3" class="knight_gallery"></div>
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(4);"><img src="img/eventi_gallery4.png" alt="Evento KNIGHT 4" class="knight_gallery"></div>
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(5);"><img src="img/eventi_gallery5.png" alt="Evento KNIGHT 5" class="knight_gallery"></div>
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(6);" id="bot_page"><img src="img/eventi_gallery6.png" alt="Evento KNIGHT 6" class="knight_gallery"></div>
+						
+						</div>
+						
+						<br><br>
+						
+					</div>
+								
+				</div>
+				
+				<div id="overlay_slider">
+					
+					<div id="closeoverlayslider_icon">
+						
+						<a onclick="closeOverlaySlider();"><img src="img/icon_close_hamburgermenu.png" alt="close overlay slider"></a>
+					
+					</div>
+					
+					<div id="slider">
+							
+						<div class="slider_img"><img src="img/slider1.png" alt="knight1" class="gallery_img"></div>
+							
+						<div class="slider_img"><img src="img/slider2.png" alt="knight2" class="gallery_img"></div>
+							
+						<div class="slider_img"><img src="img/slider3.png" alt="knight3" class="gallery_img"></div>
+							
+						<div class="slider_img"><img src="img/slider4.png" alt="knight4" class="gallery_img"></div>
+							
+						<div class="slider_img"><img src="img/slider5.png" alt="knight5" class="gallery_img"></div>
+							
+						<div class="slider_img"><img src="img/slider6.png" alt="knight6" class="gallery_img"></div>
+							
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						
+					</div>
+						
+					<div id="dots_center">
+							
+						<span class="dot" onclick="currentSlide(1)"></span>
+							
+						<span class="dot" onclick="currentSlide(2)"></span>
+							
+						<span class="dot" onclick="currentSlide(3)"></span>
+							
+						<span class="dot" onclick="currentSlide(4)"></span>
+							
+						<span class="dot" onclick="currentSlide(5)"></span>
+							
+						<span class="dot" onclick="currentSlide(6)"></span>
+						
+					</div>
+					
+				</div>
+			
+				<div class="coinop">
+				
+					<img src="img/empty_coinop.png" alt="coinop welcome" class="coinopimg">
+					
+					<div id="buttons_monitor">
+						
+						<a href="#knight" alt="sezione la storia" class="button_click"><button type="button" class="coinop_buttons">KNIGHT</button></a>
+						<a href="#info" alt="sezione golden age"  class="button_click"><button type="button" class="coinop_buttons">INFO</button></a>
+						<a href="#gallery" alt="sezione titoli" class="button_click"><button type="button" class="coinop_buttons">GALLERY</button></a>
+						
+					</div>
+					
+					<div id="buttons_updown">
+						
+						<a href="#top_page" alt="torna su" class="button_click"><button type="button" class="updown" id="up"><p> </p></button></a>
+						<a href="#bot_page" alt="torna giù" class="button_click"><button type="button" class="updown" id="down"><p> </p></button></a>
+					
+					</div>
+								
+				</div>
+				
+			</div>
+			
+			<footer><p>© Pixelknight 2020, tutti i diritti sono riservati.</p></footer>
+		
+		</div>
+		
+		<script type="text/javascript">
+			
+			overlaySlider = document.querySelector("#overlay_slider");
+			
+			openOverlaySlider = function () {
+				
+				overlaySlider.style.display = "block";
+				
+			}
+			
+			closeOverlaySlider = function () {
+				
+				overlaySlider.style.display = "none";
+				
+			}
+			
+			var slideIndex = 1;
+			
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+				
+				showSlides(slideIndex += n);
+				
+			}
+			
+			function currentSlide(n) {
+				
+				showSlides(slideIndex = n);
+				
+			}
+						
+			function showSlides(n) {
+				
+  				var i;
+				
+  				var slides = document.getElementsByClassName("slider_img");
+  				
+				var dots = document.getElementsByClassName("dot");
+  				
+				if (n > slides.length) {slideIndex = 1}
+  				
+				if (n < 1) {slideIndex = slides.length}
+  				
+				for (i = 0; i < slides.length; i++) {
+					
+					slides[i].style.display = "none";
+					
+  				}
+				
+  				for (i = 0; i < dots.length; i++) {
+					
+					dots[i].className = dots[i].className.replace(" active", "");
+					
+				}
+				
+				slides[slideIndex-1].style.display = "block";
+				
+  				dots[slideIndex-1].className += " active";
+				
+			}
+			
+			hamburgerPage = document.querySelector("#hamburger_page");
+			
+			openHamburgerPage = function() {
+				
+				hamburgerPage.style.width = "100%";
+				hamburgerPage.style.left = "0";
+				
+			}
+			
+			closeHamburgerPage = function () {
+				
+				hamburgerPage.style.width = "0";
+				hamburgerPage.style.left = "100%";
+				
+			}
+		
+		</script>
+	
+	</body>
+	
+</html>
