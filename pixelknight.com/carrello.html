@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<title>Carrello - Pixel Knight</title>
+		<link rel="icon" href="img/favicon_pixelknight.png" alt="favicon pixelknight">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+			  
+	</head>
+	
+	<body>
+	
+		<div class="wrapper">
+			
+			<header>
+				
+				<div id="logo"><a href="home.html" alt="home"><img src="img/pixelknight_marchio.png" alt="marchio pixelknight" id="pk"></a></div>
+				
+				<div id="menu">
+					
+					<ul>
+						
+						<li><a href="home.html" alt="home" class="nav_click">HOME</a></li>
+						<li><a href="storia.html" alt="storia" class="nav_click">LA STORIA</a></li>
+						<li><a href="eventi.html" alt="eventi" class="nav_click">EVENTI</a></li>
+						<li><a href="negozio.html" alt="negozio" class="nav_click">NEGOZIO</a></li>
+						<li><a href="contatti.html" alt="contatti" class="nav_click">CONTATTI</a></li>
+					
+					</ul>
+				
+				</div>
+				
+				<div id="carrello">
+					
+					<a href="carrello.html" alt="carrello"><img src="img/icon_cart.png" alt="icona carrello" id="icona_carrello"></a>
+				
+				</div>
+				
+				<div id="hamburgermenu_icon" class="responsive_stuff">
+					
+					<span onclick="openHamburgerPage();"><img src="img/icon_hamburgermenu.png" alt="hamburger menu" id="hamburgermenu_img"></span>
+				
+				</div>
+				
+				<div id="hamburger_page">
+					
+					<div id="closehmbgmenu_icon">
+						
+						<a onclick="closeHamburgerPage();"><img src="img/icon_close_hamburgermenu.png" alt="close hamburger menu"></a>
+					
+					</div>
+					
+					<div id="hmbgmenu_nav">
+						
+						<ul id="hmbg_list">
+							
+							<li class="hmbg_el"><a href="home.html" alt="home" class="nav_click">HOME</a></li>
+							<li class="hmbg_el"><a href="storia.html" alt="storia" class="nav_click">LA STORIA</a></li>
+							<li class="hmbg_el"><a href="eventi.html" alt="eventi" class="nav_click">EVENTI</a></li>
+							<li class="hmbg_el"><a href="negozio.html" alt="negozio" class="nav_click">NEGOZIO</a></li>
+							<li class="hmbg_el"><a href="contatti.html" alt="contatti" class="nav_click">CONTATTI</a></li>
+							<li class="hmbg_el"><a href="carrello.html" alt="carrello" class="nav_sel">CARRELLO</a></li>
+						
+						</ul>
+					
+					</div>
+				
+				</div>
+			
+			</header>
+			
+			<div class="page">
+			
+				<div id="cart_grid">
+					
+					<div id="t1_1" class="gridcell"><p class="grid_top"></p></div>
+					
+					<div id="t1_2" class="gridcell"><p class="grid_top"></p></div>
+					
+					<div id="t1_3" class="gridcell"><p class="grid_top">PRODOTTO</p></div>
+					
+					<div id="t1_4" class="gridcell"><p class="grid_top">PREZZO</p></div>
+					
+					<div id="t1_5" class="responsive_hide gridcell"><p class="grid_top">QUANTITÀ</p></div>
+					
+					<div id="t1_6" class="responsive_hide gridcell"><p class="grid_top">TOTALE</p></div>
+					
+					<div id="t2_1" class="gridcell"><img src="img/icon_close_hamburgermenu.png" id="icon_x" alt="delete item"></div>
+					
+					<div id="t2_2" class="gridcell"><img src="img/negozio_gadget1.png" alt="item1" class="items"></div>
+					
+					<div id="t2_3" class="gridcell"><p class="responsive_hide">Maschera PK</p><p class="responsive_stuff">Maschera PK x1</p></div>
+					
+					<div id="t2_4" class="gridcell"><p>€ 12,95</p></div>
+					
+					<div id="t2_5" class="responsive_hide gridcell"><p>1</p></div>
+					
+					<div id="t2_6" class="responsive_hide gridcell"><p>€ 12,95</p></div>
+					
+					<div id="t3_1" class="gridcell"><img src="img/icon_close_hamburgermenu.png" id="icon_x" alt="delete item"></div>
+					
+					<div id="t3_2" class="gridcell"><img src="img/negozio_gadget2.png" alt="item2" class="items"></div>
+					
+					<div id="t3_3" class="gridcell"><p class="responsive_hide">Mouse PK</p><p class="responsive_stuff">Mouse PK x2</p></div>
+					
+					<div id="t3_4" class="gridcell"><p class="responsive_hide">€ 10,00</p><br><p class="responsive_stuff">€ 20,00</p></div>
+					
+					<div id="t3_5" class="responsive_hide gridcell"><p>2</p></div>
+					
+					<div id="t3_6" class="responsive_hide gridcell"><p>€ 20,00</p></div>
+					
+					<div id="checkout_button"><a href="negozio.html" alt="checkout"><button type="button" id="check_out">CHECKOUT</button></a></div>
+					
+					<div id="totale"><p class="bigger">€ 32,95</p></div>
+				
+				</div>
+							
+			</div>
+			
+			<footer><p>© Pixelknight 2020, tutti i diritti sono riservati.</p></footer>
+		
+		</div>
+		
+		<script type="text/javascript">
+			
+			hamburgerPage = document.querySelector("#hamburger_page");
+			
+			openHamburgerPage = function() {
+				
+				hamburgerPage.style.width = "100%";
+				hamburgerPage.style.left = "0";
+				
+			}
+			
+			closeHamburgerPage = function () {
+				
+				hamburgerPage.style.width = "0";
+				hamburgerPage.style.left = "100%";
+				
+			}
+		
+		</script>
+	
+	</body>
+	
+</html>
