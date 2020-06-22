@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<title>Negozio - Pixel Knight</title>
+		<link rel="icon" href="img/favicon_pixelknight.png" alt="favicon pixelknight">
+		<link rel="stylesheet" type="text/css" href="main.css">
+			  
+	</head>
+	
+	<body>
+	
+		<div class="wrapper">
+			
+			<header>
+				
+				<div id="logo"><a href="home.html" alt="home"><img src="img/pixelknight_marchio.png" alt="marchio pixelknight" id="pk"></a></div>
+				
+				<div id="menu">
+					
+					<ul>
+						
+						<li><a href="home.html" alt="home" class="nav_click">HOME</a></li>
+						<li><a href="storia.html" alt="storia" class="nav_click">LA STORIA</a></li>
+						<li><a href="eventi.html" alt="eventi" class="nav_click">EVENTI</a></li>
+						<li><a href="negozio.html" alt="negozio" class="nav_sel">NEGOZIO</a></li>
+						<li><a href="contatti.html" alt="contatti" class="nav_click">CONTATTI</a></li>
+					
+					</ul>
+				
+				</div>
+				
+				<div id="carrello">
+					
+					<a href="carrello.html" alt="carrello"><img src="img/icon_cart.png" alt="icona carrello" id="icona_carrello"></a>
+				
+				</div>
+				
+				<div id="hamburgermenu_icon" class="responsive_stuff">
+					
+					<span onclick="openHamburgerPage();"><img src="img/icon_hamburgermenu.png" alt="hamburger menu" id="hamburgermenu_img"></span>
+				
+				</div>
+				
+				<div id="hamburger_page">
+					
+					<div id="closehmbgmenu_icon">
+						
+						<a onclick="closeHamburgerPage();"><img src="img/icon_close_hamburgermenu.png" alt="close hamburger menu"></a>
+					
+					</div>
+					
+					<div id="hmbgmenu_nav">
+						
+						<ul id="hmbg_list">
+							
+							<li class="hmbg_el"><a href="home.html" alt="home" class="nav_click">HOME</a></li>
+							<li class="hmbg_el"><a href="storia.html" alt="storia" class="nav_click">LA STORIA</a></li>
+							<li class="hmbg_el"><a href="eventi.html" alt="eventi" class="nav_click">EVENTI</a></li>
+							<li class="hmbg_el"><a href="negozio.html" alt="negozio" class="nav_sel">NEGOZIO</a></li>
+							<li class="hmbg_el"><a href="contatti.html" alt="contatti" class="nav_click">CONTATTI</a></li>
+							<li class="hmbg_el"><a href="carrello.html" alt="carrello" class="nav_click">CARRELLO</a></li>
+						
+						</ul>
+					
+					</div>
+				
+				</div>
+			
+			</header>
+			
+			<div class="page">
+			
+				<div class="contenuti">
+					
+					<div class="testi" id="top_page">
+						
+						<div class="responsive_stuff">
+							
+							<img src="img/responsive_negozio.png" alt="biglietto mostra KNIGHT" class="responsive_img">
+						
+						</div>
+						
+						<h1 id="negozio">NEGOZIO</h1>
+						
+						<div class="responsive_stuff" id="responsive_buttons">
+						
+							<a href="#" alt="gadget popolari" class="responsive_button_click"><button type="button" class="responsive_coinop_buttons">POPOLARI</button></a>
+							<a href="#" alt="gadget nuovi"  class="responsive_button_click"><button type="button" class="responsive_coinop_buttons">NUOVI ARRIVI</button></a>
+							<a href="#" alt="gadget pixelknight" class="responsive_button_click"><button type="button" class="responsive_coinop_buttons">PIXELKNIGHT</button></a>
+							<a href="#" alt="gadget knight" class="responsive_button_click"><button type="button" class="responsive_coinop_buttons">KNIGHT</button></a>
+						
+						</div>
+						
+						<div id="shop_container">
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(1);">
+								
+								<img src="img/negozio_gadget1.png" alt="gadget 1" class="shop_gallery">
+								
+								<div class="shop_caption">
+									
+									<p class="gadget_caption"><b>Mascherina PK</b></p>
+									<p class="gadget_caption">€ 12,95</p>
+								
+								</div>
+							
+							</div>
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(2);">
+								
+								<img src="img/negozio_gadget2.png" alt="gadget 2" class="shop_gallery">
+								
+								<div class="shop_caption">
+									
+									<p class="gadget_caption"><b>Mouse PK</b></p>
+									<p class="gadget_caption">€ 10,00</p>
+								
+								</div>
+							
+							</div>
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(3);">
+								
+								<img src="img/negozio_gadget3.png" alt="gadget 3" class="shop_gallery">
+								
+								<div class="shop_caption">
+									
+									<p class="gadget_caption"><b>T-Shirt PK</b></p>
+									<p class="gadget_caption">€ 20,00</p>
+								
+								</div>
+							
+							</div>
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(4);">
+								
+								<img src="img/negozio_gadget4.png" alt="gadget 4" class="shop_gallery">
+								
+								<div class="shop_caption">
+									
+									<p class="gadget_caption"><b>Bag PK</b></p>
+									<p class="gadget_caption">€ 10,00</p>
+								
+								</div>
+							
+							</div>
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(5);">
+								
+								<img src="img/negozio_gadget5.png" alt="gadget 5" class="shop_gallery">
+								
+								<div class="shop_caption">
+									
+									<p class="gadget_caption"><b>Mug PK</b></p>
+									<p class="gadget_caption">€ 15,00</p>
+								
+								</div>
+							
+							</div>
+							
+							<div class="gallery_space" onclick="openOverlaySlider(); currentSlide(6);">
+								
+								<img src="img/negozio_gadget6.png" alt="gadget 6" class="shop_gallery">
+								
+								<div class="shop_caption">
+									
+									<p class="gadget_caption"><b>Mousepad PK</b></p>
+									<p class="gadget_caption">€ 15,00</p>
+								
+								</div>
+							
+							</div>
+						
+						</div>
+						
+						<br><br>
+						
+					</div>
+								
+				</div>
+				
+				<div id="overlay_slider">
+					
+					<div id="closeoverlayslider_icon">
+						
+						<a onclick="closeOverlaySlider();"><img src="img/icon_close_hamburgermenu.png" alt="close overlay slider"></a>
+					
+					</div>
+					
+					<div id="overlay_gadget">
+							
+						<div class="gadget_box">
+							
+							<div class="gadget_img_wide">
+								
+								<img src="img/negozio_gadget1_wide.png" alt="gadget1" class="gadget_img">
+								
+							</div>
+							
+							<div class="shopping_info">
+								
+								<h3>MASCHERINA PIXEL KNIGHT</h3>
+								
+								<p>€ 12,95</p>
+								
+								<a href="carrello.html" alt="aggiungi al carrello" class="button_click"><button type="button" class="buttons" id="addtocart">AGGIUNGI<br>AL CARRELLO</button></a>
+							
+							</div>
+						
+						</div>
+							
+						<div class="gadget_box">
+							
+							<div class="gadget_img_wide">
+							
+								<img src="img/negozio_gadget2_wide.png" alt="gadget2" class="gadget_img">
+								
+							</div>
+							
+							<div class="shopping_info">
+								
+								<h3>MOUSE PIXEL KNIGHT</h3>
+								
+								<p>€ 10,00</p>
+								
+								<a href="carrello.html" alt="aggiungi al carrello" class="button_click"><button type="button" class="buttons" id="addtocart">AGGIUNGI<br>AL CARRELLO</button></a>
+							
+							</div>
+						
+						</div>
+							
+						<div class="gadget_box">
+							
+							<div class="gadget_img_wide">
+							
+								<img src="img/negozio_gadget3_wide.png" alt="gadget3" class="gadget_img">
+								
+							</div>
+							
+							<div class="shopping_info">
+								
+								<h3>T-SHIRT PIXEL KNIGHT</h3>
+								
+								<p>€ 20,00</p>
+								
+								<a href="carrello.html" alt="aggiungi al carrello" class="button_click"><button type="button" class="buttons" id="addtocart">AGGIUNGI<br>AL CARRELLO</button></a>
+							
+							</div>
+						
+						</div>
+							
+						<div class="gadget_box">
+							
+							<div class="gadget_img_wide">							
+								<img src="img/negozio_gadget4_wide.png" alt="gadget4" class="gadget_img">
+								
+							</div>
+							
+							<div class="shopping_info">
+								
+								<h3>BAG PIXEL KNIGHT</h3>
+								
+								<p>€ 10,00</p>
+								
+								<a href="carrello.html" alt="aggiungi al carrello" class="button_click"><button type="button" class="buttons" id="addtocart">AGGIUNGI<br>AL CARRELLO</button></a>
+							
+							</div>
+						
+						</div>
+							
+						<div class="gadget_box">
+							
+							<div class="gadget_img_wide">
+							
+								<img src="img/negozio_gadget5_wide.png" alt="gadget5" class="gadget_img">
+								
+							</div>
+							
+							<div class="shopping_info">
+								
+								<h3>MUG PIXEL KNIGHT</h3>
+								
+								<p>€ 15,00</p>
+								
+								<a href="carrello.html" alt="aggiungi al carrello" class="button_click"><button type="button" class="buttons" id="addtocart">AGGIUNGI<br>AL CARRELLO</button></a>
+							
+							</div>
+						
+						</div>
+							
+						<div class="gadget_box">
+							
+							<div class="gadget_img_wide">
+							
+								<img src="img/negozio_gadget6_wide.png" alt="gadget6" class="gadget_img">
+						
+							</div>
+							
+							<div class="shopping_info">
+								
+								<h3>MOUSEPAD PIXEL KNIGHT</h3>
+								
+								<p>€ 15,00</p>
+								
+								<a href="carrello.html" alt="aggiungi al carrello" class="button_click"><button type="button" class="buttons" id="addtocart">AGGIUNGI<br>AL CARRELLO</button></a>
+							
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			
+				<div class="coinop">
+				
+					<img src="img/empty_coinop.png" alt="coinop welcome" class="coinopimg">
+					
+					<div id="buttons_monitor">
+						
+						<a href="#" alt="gadget popolari" class="button_click"><button type="button" class="coinop_buttons">POPOLARI</button></a>
+						<a href="#" alt="gadget nuovi"  class="button_click"><button type="button" class="coinop_buttons">NUOVI ARRIVI</button></a>
+						<a href="#" alt="gadget pixelknight" class="button_click"><button type="button" class="coinop_buttons">PIXELKNIGHT</button></a>
+						<a href="#" alt="gadget knight" class="button_click"><button type="button" class="coinop_buttons">KNIGHT</button></a>
+						
+					</div>
+					
+					<div id="buttons_updown">
+						
+						<a href="#top_page" alt="torna su" class="button_click"><button type="button" class="updown" id="up"><p> </p></button></a>
+						<a href="#bot_page" alt="torna giù" class="button_click"><button type="button" class="updown" id="down"><p> </p></button></a>
+					
+					</div>
+								
+				</div>
+				
+			</div>
+			
+			<footer><p>© Pixelknight 2020, tutti i diritti sono riservati.</p></footer>
+		
+		</div>
+		
+		<script type="text/javascript">
+			
+			overlaySlider = document.querySelector("#overlay_slider");
+			
+			openOverlaySlider = function () {
+				
+				overlaySlider.style.display = "block";
+				
+			}
+			
+			closeOverlaySlider = function () {
+				
+				overlaySlider.style.display = "none";
+				
+			}
+			
+			var slideIndex = 1;
+			
+			showSlides(slideIndex);
+			
+			function currentSlide(n) {
+				
+				showSlides(slideIndex = n);
+				
+			}
+						
+			function showSlides(n) {
+				
+  				var i;
+				
+  				var slides = document.getElementsByClassName("gadget_box");
+  				
+				if (n > slides.length) {slideIndex = 1}
+  				
+				if (n < 1) {slideIndex = slides.length}
+  				
+				for (i = 0; i < slides.length; i++) {
+					
+					slides[i].style.display = "none";
+					
+  				}
+				
+				slides[slideIndex-1].style.display = "inherit";
+				
+  			}
+			
+			hamburgerPage = document.querySelector("#hamburger_page");
+			
+			openHamburgerPage = function() {
+				
+				hamburgerPage.style.width = "100%";
+				hamburgerPage.style.left = "0";
+				
+			}
+			
+			closeHamburgerPage = function () {
+				
+				hamburgerPage.style.width = "0";
+				hamburgerPage.style.left = "100%";
+				
+			}
+		
+		</script>
+	
+	</body>
+	
+</html>
