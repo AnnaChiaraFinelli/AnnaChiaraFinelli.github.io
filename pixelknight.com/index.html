@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<title>Insert Coin</title>
+		<link rel="icon" href="img/favicon_intro.png" alt="favicon intro">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+			  
+	</head>
+	
+	<body id="introbody">
+		
+		<div class="wrapper">
+			
+			<div id="coinopintro">
+			
+				<img src="img/intro_coinop_1.png" alt="coinop insert coin" id="coinopinsert">
+				
+				<div id="slot">
+					
+					<button id="insert_coin" type="button" onclick="insertedCoin();"></button>
+					
+				</div>
+		
+			</div>
+			
+		</div>
+		
+		<script type="text/javascript">
+			
+			insertedCoin = function() {
+					
+				document.getElementById('coinopinsert').src = "img/intro_inserted_coin.gif";
+				
+				document.body.style.cursor = "auto";
+				cliccabile = document.querySelector('#insert_coin');
+				cliccabile.style.display = "none";
+				
+				var caricaHome = setTimeout (function() {
+						window.location.href = "home.html";
+						window.clearTimeout(caricaHome);
+					}, 3000);
+				
+			}
+						
+		</script>
+	
+	</body>
+
+</html>
